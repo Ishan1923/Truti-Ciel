@@ -1,0 +1,17 @@
+# config/behavior.yaml
+llm:
+  model: "gemini-3.8-flash"
+  temperature: 0.1  # Keep this low so the robot's responses are predictable
+
+sensors:
+  mpu6050:
+    events:
+      - state: "tipping_forward"
+        condition: "pitch > 45.0"
+        graphic_id: 101
+        prompt: "The robot is tipping forward. Return a 1-word panicked reaction."
+      
+      - state: "stable"
+        condition: "-5.0 < pitch < 5.0"
+        graphic_id: 102
+        prompt: "The robot is perfectly balanced. Return a short, cool greeting."
