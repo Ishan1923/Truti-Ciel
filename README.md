@@ -57,13 +57,3 @@ sensors:
 ```bash
 python src/simulator.py
 ```
-
-## How to Create an "Umbrella" for Truti OS
-
-To link both repositories together so they look like one professional project to a company, create a GitHub Organization:
-1. Go to your GitHub homepage.
-2. Click the **"+"** icon in the top right corner and select **New organization**.
-3. Choose the **Free** plan and name it something like **Truti-Robotics**.
-4. Go to the Settings of your `truti-os` and `truti-ai-bridge` repositories, scroll to the bottom (Danger Zone), and click **Transfer ownership** to move them into your new organization.
-
-This makes your GitHub profile look incredibly professional, showing you know how to split a complex system into multiple interconnected microservices.
